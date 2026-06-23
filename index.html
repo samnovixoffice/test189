@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>وب‌سایت من</title>
-  </head>
-  <body>
-    <h1>سلام دنیا!</h1>
-    <p>به وب‌سایت من خوش آمدید.</p>
-  </body>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تایید هویت و تست</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <button id="openDialogBtn" class="btn btn-primary">کلیک کن</button>
+        <p style="color:#94a3b8; margin-top:20px; font-size:0.9rem;">برای اینکه دیالوگ و نشون داده بشه، باید کلیک کنی روی دکمه</p>
+    </div>
+
+    <div class="dialog-overlay" id="dialogOverlay">
+        <div class="dialog-box">
+            <div class="dialog-header">
+                <h3>دیالوگ برای تست/h3>
+                <button class="dialog-close" id="closeDialogBtn">✕</button>
+            </div>
+
+            <div class="dialog-body">
+                <p>این دیالوگ تسته</p>
+                <p style="font-size:0.9rem; color:#64748b;">خب، یک دیالوگ تست که اینجا برای توضیحاته</p>
+                
+                <div style="margin-top:20px;">
+                    <label for="testInput" style="display:block; margin-bottom:6px; font-weight:500;">نظرت؟</label>
+                    <input type="text" id="testInput" placeholder="چیزی بنویسید..." />
+                </div>
+            </div>
+
+            <div class="dialog-footer">
+                <button class="btn btn-ghost" id="cancelDialogBtn">انصراف</button>
+                <button class="btn btn-primary" id="confirmDialogBtn">تأیید</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
